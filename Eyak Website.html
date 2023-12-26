@@ -167,17 +167,19 @@
   <![endif]-->
 </head>
 <body>
+
+   <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+
 <header id="title-block-header">
 <h1 class="title">The Sound System of Eyak (dAXunhyuuga’)</h1>
 <p class="author">Olivia Waring</p>
 </header>
-
-<figure>
-  <figcaption>i sound</figcaption>
-  <audio controls src="i.mp3">
-    <a href="i.mp3"> Download audio </a>
-  </audio>
-</figure>
 
 <p>As you begin your studies of Eyak, one of the most daunting
 challenges you will encounter is wrapping your mind (and mouth!) around
@@ -515,7 +517,8 @@ round your lips while producing the English‘k’ sound; it will sound
 something like ‘kw.’</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">G</td>
+<td style="text-align: left;"> G   <input type="button" value="PLAY" onclick="play()">
+<audio id="audio" src="sounds/MP3/Voiceless_uvular_plosive.mp3"></audio></td>
 <td style="text-align: left;">voiceless uvular stop</td>
 <td style="text-align: left;">No English equivalent. This should be
 produced almost like a ‘k,’ but further back in the throat. (Students of
