@@ -89,6 +89,10 @@
       font-size: 85%;
       margin: 0;
     }
+    figure {
+      font-style:  italic;
+      font-size:  smaller;
+    }
     pre {
       margin: 1em 0;
       overflow: auto;
@@ -118,6 +122,8 @@
     }
     table caption {
       margin-bottom: 0.75em;
+      font-style: italic;
+      font-size: larger;
     }
     tbody {
       margin-top: 0.5em;
@@ -125,10 +131,12 @@
       border-bottom: 1px solid #1a1a1a;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 2px solid #1a1a1a;
+      border-bottom: 2px solid #1a1a1a;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
+      border-top: 1px solid #1a1a1a;
       padding: 0.125em 0.5em 0.25em 0.5em;
     }
     header {
@@ -178,7 +186,7 @@
 
 <header id="title-block-header">
 <h1 class="title">The Sound System of Eyak (dAXunhyuuga’    <input type="button" value="&#128266" onclick="play('audio_title')">
-<audio id="audio_title" src="sounds/MP3/thewordsofthepeople_GL.mp3"></audio>)</h1>
+<audio id="audio_title" src="audio/sounds/thewordsofthepeople_GL.mp3"></audio>)</h1>
 <p class="author">Olivia Waring</p>
 </header>
 
@@ -250,7 +258,7 @@ glottal sounds more in the sections that follow.</p></li>
 <figure>
 <img src="midsagittal.png" width="300" id="fig:midsagittal"
 alt="A so-called “midsagittal diagram&quot; showing the various articulators of the human vocal tract (from Anderson et. al. ). Midsagittal just means we’re looking at a cross-section of the head from the side." />
-<figcaption aria-hidden="true">A so-called “midsagittal diagram" showing
+<figcaption aria-hidden="true"><b>Figure 1:</b> A so-called “midsagittal diagram" showing
 the various articulators of the human vocal tract (from Anderson et. al.
 <span class="citation" data-cites="ess"></span>). Midsagittal just means
 we’re looking at a cross-section of the head from the side.</figcaption>
@@ -452,8 +460,7 @@ role="doc-noteref"><sup>1</sup></a></p>
 <div class="center">
 <div id="table:oral">
 <table>
-<caption>Eyak Oral Consonants (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 1:</b> Eyak Oral Consonants</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -467,14 +474,14 @@ Description</strong></th>
 
 
 <td style="text-align: left;">b   <input type="button" value="&#128266" onclick="play('audio_b')">
-<audio id="audio_b" src="sounds/MP3/Voiced_bilabial_plosive.mp3"></audio></td>
+<audio id="audio_b" src="audio/sounds/Voiced_bilabial_plosive.mp3"></audio></td>
 <td style="text-align: left;">voiced bilabial stop</td>
 <td style="text-align: left;">Equivalent to the letter ‘b’ in
 English</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">d   <input type="button" value="&#128266" onclick="play('audio_d')">
-<audio id="audio_d" src="sounds/MP3/Voiceless_alveolar_plosive.mp3"></audio></td>
+<audio id="audio_d" src="audio/sounds/Voiceless_alveolar_plosive.mp3"></audio></td>
 <td style="text-align: left;">voiceless alveolar stop</td>
 <td style="text-align: left;">Equivalent to the letter ‘t’ in English.
 Don’t be fooled by the letter: be careful not to pronounce this in a
@@ -489,7 +496,7 @@ produce a puff of air alongside the English ‘t’ sound.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">t’   <input type="button" value="&#128266" onclick="play('audio_t_ejective')">
-<audio id="audio_t_ejective" src="sounds/MP3/Alveolar_ejective_plosive.mp3"></audio></td>
+<audio id="audio_t_ejective" src="audio/sounds/Alveolar_ejective_plosive.mp3"></audio></td>
 <td style="text-align: left;"><em>ejective</em> voiceless alveolar
 stop</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -497,7 +504,7 @@ close your throat (glottis) while producing the English ‘t’ sound.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">g   <input type="button" value="&#128266" onclick="play('audio_g')">
-<audio id="audio_g" src="sounds/MP3/Voiceless_velar_plosive.mp3"></audio></td>
+<audio id="audio_g" src="audio/sounds/Voiceless_velar_plosive.mp3"></audio></td>
 <td style="text-align: left;">voiceless velar stop</td>
 <td style="text-align: left;">Equivalent to the letter ‘k’ in English.
 Don’t be fooled by the letter: be careful not to pronounce this in a
@@ -512,7 +519,7 @@ produce a puff of air alongside the English ‘k’ sound.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">k’   <input type="button" value="&#128266" onclick="play('audio_k')">
-<audio id="audio_k" src="sounds/MP3/Velar_ejective_plosive.mp3"></audio></td>
+<audio id="audio_k" src="audio/sounds/Velar_ejective_plosive.mp3"></audio></td>
 <td style="text-align: left;"><em>ejective</em> voiceless velar
 stop</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -528,7 +535,7 @@ something like ‘kw.’</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">G   <input type="button" value="&#128266" onclick="play('audio_G')">
-<audio id="audio_G" src="sounds/MP3/Voiceless_uvular_plosive.mp3"></audio></td>
+<audio id="audio_G" src="audio/sounds/Voiceless_uvular_plosive.mp3"></audio></td>
 <td style="text-align: left;">voiceless uvular stop</td>
 <td style="text-align: left;">No English equivalent. This should be
 produced almost like a ‘k,’ but further back in the throat. (Students of
@@ -544,7 +551,7 @@ produce a puff of air alongside the sound.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">q’   <input type="button" value="&#128266" onclick="play('audio_q_ejective')">
-<audio id="audio_q_ejective" src="sounds/MP3/Uvular_ejective_plosive.mp3"></audio></td>
+<audio id="audio_q_ejective" src="audio/sounds/Uvular_ejective_plosive.mp3"></audio></td>
 <td style="text-align: left;"><em>ejective</em> voiceless uvular
 stop</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -552,7 +559,7 @@ close your throat (glottis) while producing the sound.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">’   <input type="button" value="&#128266" onclick="play('audio_?')">
-<audio id="audio_?" src="sounds/MP3/Glottal_stop.mp3"></audio></td>
+<audio id="audio_?" src="audio/sounds/Glottal_stop.mp3"></audio></td>
 <td style="text-align: left;">glottal stop</td>
 <td style="text-align: left;">This sound occasionally crops up in
 English, although we don’t have a letter for it. If you pronounce the
@@ -571,8 +578,7 @@ palate) is lowered, allowing for airflow through the nasal passages.</p>
 <div class="center">
 <div id="table:nasal">
 <table>
-<caption>Eyak Nasal Consonants (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 2:</b> Eyak Nasal Consonants</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -584,21 +590,21 @@ Description</strong></th>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">m   <input type="button" value="&#128266" onclick="play('audio_m')">
-<audio id="audio_m" src="sounds/MP3/Bilabial_nasal.mp3"></audio></td>
+<audio id="audio_m" src="audio/sounds/Bilabial_nasal.mp3"></audio></td>
 <td style="text-align: left;">voiced bilabial nasal stop</td>
 <td style="text-align: left;">Equivalent to the letter ‘m’ in
 English</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">n   <input type="button" value="&#128266" onclick="play('audio_n')">
-<audio id="audio_n" src="sounds/MP3/Alveolar_nasal.mp3"></audio></td>
+<audio id="audio_n" src="audio/sounds/Alveolar_nasal.mp3"></audio></td>
 <td style="text-align: left;">voiced alveolar nasal stop</td>
 <td style="text-align: left;">Equivalent to the letter ‘n’ in
 English.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ŋ   <input type="button" value="&#128266" onclick="play('audio_ng')">
-<audio id="audio_ng" src="sounds/MP3/Velar_nasal.mp3"></audio></td>
+<audio id="audio_ng" src="audio/sounds/Velar_nasal.mp3"></audio></td>
 <td style="text-align: left;">voiced velar nasal stop</td>
 <td style="text-align: left;">Equivalent to the letters ‘ng’ in English.
 The orthographical symbol may be unfamiliar to English speakers; note
@@ -615,8 +621,7 @@ fricatives are voiceless.</p>
 <div class="center">
 <div id="table:fric">
 <table>
-<caption>Eyak Fricatives (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 3:</b> Eyak Fricatives</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -628,14 +633,14 @@ Description</strong></th>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">s   <input type="button" value="&#128266" onclick="play('audio_s')">
-<audio id="audio_s" src="sounds/MP3/Voiceless_alveolar_sibilant.mp3"></audio></td>
+<audio id="audio_s" src="audio/sounds/Voiceless_alveolar_sibilant.mp3"></audio></td>
 <td style="text-align: left;">voiceless alveolar fricative</td>
 <td style="text-align: left;">Equivalent to the letter ‘s’ in
 English.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">L   <input type="button" value="&#128266" onclick="play('audio_L')">
-<audio id="audio_L" src="sounds/MP3/Voiceless_alveolar_lateral_fricative.mp3"></audio></td>
+<audio id="audio_L" src="audio/sounds/Voiceless_alveolar_lateral_fricative.mp3"></audio></td>
 <td style="text-align: left;">voiceless lateral fricative</td>
 <td style="text-align: left;">A rather difficult sound for English
 speakers to produce. The easiest way to approximate this sound is to
@@ -645,14 +650,14 @@ few times until it feels natural.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">sh   <input type="button" value="&#128266" onclick="play('audio_sh')">
-<audio id="audio_sh" src="sounds/MP3/Voiceless_palato-alveolar_sibilant.mp3"></audio></td>
+<audio id="audio_sh" src="audio/sounds/Voiceless_palato-alveolar_sibilant.mp3"></audio></td>
 <td style="text-align: left;">voiceless postalveolar fricative</td>
 <td style="text-align: left;">Equivalent to the letters ‘sh’ in
 English.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">x   <input type="button" value="&#128266" onclick="play('audio_x')">
-<audio id="audio_x" src="sounds/MP3/Voiceless_velar_fricative.mp3"></audio></td>
+<audio id="audio_x" src="audio/sounds/Voiceless_velar_fricative.mp3"></audio></td>
 <td style="text-align: left;">voiceless velar fricative</td>
 <td style="text-align: left;">No English equivalent, but speakers of
 German may recognize this as the ‘ch’ sound in words like ‘ich.’ Bring
@@ -669,7 +674,7 @@ simultaneously round your lips.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">X   <input type="button" value="&#128266" onclick="play('audio_X')">
-<audio id="audio_X" src="sounds/MP3/Voiceless_uvular_fricative.mp3"></audio></td>
+<audio id="audio_X" src="audio/sounds/Voiceless_uvular_fricative.mp3"></audio></td>
 <td style="text-align: left;">voiceless uvular fricative</td>
 <td style="text-align: left;">Similar to the sound ‘x’ described above,
 but this should be produced even further back in your mouth; refer to
@@ -678,7 +683,7 @@ tongue close to (but not touching) the uvula.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">h   <input type="button" value="&#128266" onclick="play('audio_h')">
-<audio id="audio_h" src="sounds/MP3/Voiceless_glottal_fricative.mp3"></audio></td>
+<audio id="audio_h" src="audio/sounds/Voiceless_glottal_fricative.mp3"></audio></td>
 <td style="text-align: left;">voiceless glottal fricative</td>
 <td style="text-align: left;">Equivalent to the letter ‘h’ in
 English.</td>
@@ -693,8 +698,7 @@ English.</td>
 <div class="center">
 <div id="table:aff">
 <table>
-<caption>Eyak Affricates (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 4:</b> Eyak Affricates</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -706,7 +710,7 @@ Description</strong></th>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">dz   <input type="button" value="&#128266" onclick="play('audio_dz')">
-<audio id="audio_dz" src="sounds/MP3/Voiceless_palato-alveolar_affricate.mp3"></audio></td>
+<audio id="audio_dz" src="audio/sounds/Voiceless_palato-alveolar_affricate.mp3"></audio></td>
 <td style="text-align: left;">voiceless alveolar affricate</td>
 <td style="text-align: left;">Equivalent to the letters ‘ts’ in
 English</td>
@@ -720,7 +724,7 @@ be extra emphatic with the release of air.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ts’   <input type="button" value="&#128266" onclick="play('audio_ts_ejective')">
-<audio id="audio_ts_ejective" src="sounds/MP3/Alveolar_ejective_affricate.mp3"></audio></td>
+<audio id="audio_ts_ejective" src="audio/sounds/Alveolar_ejective_affricate.mp3"></audio></td>
 <td style="text-align: left;"><em>ejective</em> voiceless alveolar
 affricate</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -730,14 +734,14 @@ cats," you have produced this sound!)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">dj<span class="math inline">\(\sim\)</span> j<input type="button" value="&#128266" onclick="play('audio_dj')">
-<audio id="audio_dj" src="sounds/MP3/Voiceless_uvular_plosive.mp3"></audio></td>
+<audio id="audio_dj" src="audio/sounds/Voiceless_uvular_plosive.mp3"></audio></td>
 <td style="text-align: left;">voiceless postalveolar affricate</td>
 <td style="text-align: left;">Equivalent to the letters ‘ch’ in English,
 as in “children" or “watch."</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ch   <input type="button" value="&#128266" onclick="play('audio_ch')">
-<audio id="audio_ch" src="sounds/MP3/Voiceless_uvular_plosive.mp3"></audio></td>
+<audio id="audio_ch" src="audio/sounds/Voiceless_uvular_plosive.mp3"></audio></td>
 <td style="text-align: left;"><em>aspirated</em> voiceless postalveolar
 affricate</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -745,7 +749,7 @@ be extra emphatic with the release of air.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ch’   <input type="button" value="&#128266" onclick="play()">
-<audio id="audio" src="sounds/MP3/Voiceless_uvular_plosive.mp3"></audio></td>
+<audio id="audio" src="audio/sounds/Voiceless_uvular_plosive.mp3"></audio></td>
 <td style="text-align: left;"><em>ejective</em> voiceless postalveolar
 affricate</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -769,7 +773,7 @@ be extra emphatic with the release of air.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">tl’   <input type="button" value="&#128266" onclick="play()">
-<audio id="audio" src="sounds/MP3/Alveolar_lateral_ejective_affricate.mp3"></audio></td>
+<audio id="audio" src="audio/sounds/Alveolar_lateral_ejective_affricate.mp3"></audio></td>
 <td style="text-align: left;"><em>ejective</em> voiceless alveolar
 lateral affricate</td>
 <td style="text-align: left;">Equivalent to the above, except you should
@@ -786,8 +790,7 @@ that they are almost vowel-like.</p>
 <div class="center">
 <div id="table:approx">
 <table>
-<caption>Eyak Approximants (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 5:</b> Eyak Approximants</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -799,21 +802,21 @@ Description</strong></th>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">l   <input type="button" value="&#128266" onclick="play('audio_l')">
-<audio id="audio_l" src="sounds/MP3/Alveolar_lateral_approximant.mp3"></audio></td>
+<audio id="audio_l" src="audio/sounds/Alveolar_lateral_approximant.mp3"></audio></td>
 <td style="text-align: left;">voiced alveolar lateral approximant</td>
 <td style="text-align: left;">Equivalent to the letter ‘l’ in
 English.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">y   <input type="button" value="&#128266" onclick="play('audio_y')">
-<audio id="audio_y" src="sounds/MP3/Palatal_approximant.mp3"></audio></td>
+<audio id="audio_y" src="audio/sounds/Palatal_approximant.mp3"></audio></td>
 <td style="text-align: left;">voiced palatal lateral approximant</td>
 <td style="text-align: left;">Equivalent to the letter ‘y’ in
 English.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">w   <input type="button" value="&#128266" onclick="play('audio_w')">
-<audio id="audio_w" src="sounds/MP3/Voiced_labio-velar_approximant.mp3"></audio></td>
+<audio id="audio_w" src="audio/sounds/Voiced_labio-velar_approximant.mp3"></audio></td>
 <td style="text-align: left;">voiced labio-velar approximant</td>
 <td style="text-align: left;">Equivalent to the letter ‘w’ in
 English.</td>
@@ -842,8 +845,7 @@ vowels must be pure.</p>
 <div class="center">
 <div id="table:vowels">
 <table>
-<caption>Eyak Vowels (adapted from Krauss 2023 <span class="citation"
-data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 6:</b> Eyak Vowels</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -934,8 +936,7 @@ never appear without a modification of some sort.</p>
 <div class="center">
 <div id="table:ivowels">
 <table>
-<caption>Types of ‘i’ vowels (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 7:</b> Types of ‘i’ vowels</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -1012,8 +1013,7 @@ long, with a head cold, and ??.</td>
 <div class="center">
 <div id="table:uvowels">
 <table>
-<caption>Types of ‘u’ vowels (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 8:</b> Types of ‘u’ vowels</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -1084,8 +1084,7 @@ class="math inline">\(\sim\)</span> uun’</td>
 <div class="center">
 <div id="table:evowels">
 <table>
-<caption>Types of ‘e’ vowels (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 9:</b> Types of ‘e’ vowels</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -1136,8 +1135,7 @@ class="math inline">\(\sim\)</span> ee’</td>
 <div class="center">
 <div id="table:uvowels">
 <table>
-<caption>Types of ‘a’ vowels (adapted from Krauss 2023 <span
-class="citation" data-cites="Krauss1"></span>)</caption>
+<caption><b>Table 10:</b> Types of ‘a’ vowels</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Eyak Letter</strong></th>
@@ -1329,23 +1327,52 @@ deliberately, one at a time. At this stage, you should resist the
 temptation to speak rapidly and focus on articulating each individual
 sound to the best of your ability.</p>
 <ol>
-<li><p>’uGL (<em>heart</em>)</p></li>
-<li><p>Ajih (<em>demon, ghost</em>)</p></li>
-<li><p>AXAkih (<em>canoe</em>)</p></li>
-<li><p>ch’AX (<em>wings</em>)</p></li>
-<li><p>dAGaaq’ sLiXa’tl’L (<em>It is ten o’clock.</em>)</p></li>
-<li><p>diiya’ (<em>saltwater, ocean</em>)</p></li>
-<li><p>sijehX (<em>my ears</em>)</p></li>
-<li><p>k‘uuy (<em>wind</em>)</p></li>
-<li><p>LinhGih (<em>one</em>)</p></li>
-<li><p>q’a’ts’ (<em>salmonberry bushes</em>)</p></li>
+<li><p>’uGL (<em>heart</em>)   <input type="button" value="&#128266" onclick="play('audio_heart')">
+<audio id="audio_heart" src="audio/words/Voiced_bilabial_plosive.mp3"></audio></p></li>
+
+<li><p>Ajih (<em>demon, ghost</em>)   <input type="button" value="&#128266" onclick="play('audio_ghost')">
+<audio id="audio_ghost" src="audio/words/Demon_GL.mp3.mp3"></audio></p></li>
+
+<li><p>AXAkih (<em>canoe</em>)   <input type="button" value="&#128266" onclick="play('audio_canoe')">
+<audio id="audio_canoe" src="audio/words/canoe_GL.mp3"></audio></p></li>
+
+<li><p>ch’AX (<em>wings</em>)   <input type="button" value="&#128266" onclick="play('audio_wings')">
+<audio id="audio_wings" src="audio/words/Voiced_bilabial_plosive.mp3"></audio></p></li>
+
+<li><p>dAGaaq’ sLiXa’tl’L (<em>It is ten o’clock.</em>)   <input type="button" value="&#128266" onclick="play('audio_ten')">
+<audio id="audio_ten" src="audio/words/Voiced_bilabial_plosive.mp3"></audio></p></li>
+
+<li><p>diiya’ (<em>saltwater, ocean</em>)   <input type="button" value="&#128266" onclick="play('audio_ocean')"><audio id="audio_ocean" src="audio/words/Voiced_bilabial_plosive.mp3"></audio></p></li>
+
+<li><p>sijehX (<em>my ears</em>)   <input type="button" value="&#128266" onclick="play('audio_ears')">
+<audio id="audio_ears" src="audio/words/Ears-my_GL.mp3"></audio></p></li>
+
+<li><p>k‘uuy (<em>wind</em>)   <input type="button" value="&#128266" onclick="play('audio_wind')">
+<audio id="audio_wind" src="audio/words/wind_GL.mp3"></audio></p></li>
+
+<li><p>LinhGih (<em>one</em>)   <input type="button" value="&#128266" onclick="play('audio_one')">
+<audio id="audio_one" src="audio/words/one_GL.mp3"></audio></p></li>
+
+<li><p>q’a’ts’ (<em>salmonberry bushes</em>)   <input type="button" value="&#128266" onclick="play('audio_salmon')">
+<audio id="audio_salmon" src="audio/words/Voiced_bilabial_plosive.mp3"></audio></p></li>
+
 <li><p>qaa Lyiin’inh (<em>doctor</em>; literally, <em>He who heals
-us.</em>)</p></li>
-<li><p>t’uhLga’ (<em>three</em>)</p></li>
-<li><p>tleeshXaashiishXaa (<em>dragonfly</em>)</p></li>
+us.</em>)   <input type="button" value="&#128266" onclick="play('audio_doctor')">
+<audio id="audio_doctor" src="audio/words/Doctor_GL.mp3"></audio></p></li>
+
+<li><p>t’uhLga’ (<em>three</em>)   <input type="button" value="&#128266" onclick="play('audio_three')">
+<audio id="audio_three" src="audio/words/three_GL.mp3"></audio></p></li>
+
+<li><p>tleeshXaashiishXaa (<em>dragonfly</em>)   <input type="button" value="&#128266" onclick="play('audio_dragon')">
+<audio id="audio_dragon" src="audio/words/Dragonfly_GL.mp3"></audio></p></li>
+
 <li><p>xitl’ga’ iit’eh (<em>white</em>; literally, <em>It is like
-snow</em>)</p></li>
-<li><p>yAX dAdAXahdX (<em>accordion</em>)</p></li>
+snow</em>)   <input type="button" value="&#128266" onclick="play('audio_white')">
+<audio id="audio_white" src="audio/words/Voiced_bilabial_plosive.mp3"></audio></p></li>
+
+<li><p>yAX dAdAXahdX (<em>accordion</em>; literally, <em>It is pulled back and forth with sound</em>)   <input type="button" value="&#128266" onclick="play('audio_accord')">
+<audio id="audio_accord" src="audio/words/accordion_GL.mp3"></audio></p></li>
+
 </ol></li>
 </ol>
 <h1 id="answers-to-practice-exercises">Answers to Practice
